@@ -145,6 +145,13 @@
 		81BC6B751D236673007908ED /* LOLHeroCon.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B741D236673007908ED /* LOLHeroCon.m */; };
 		81BC6B781D236698007908ED /* LOLConmunityCon.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B771D236698007908ED /* LOLConmunityCon.m */; };
 		81BC6B7C1D2366AC007908ED /* LOLMoreCon.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B7B1D2366AC007908ED /* LOLMoreCon.m */; };
+		81BC6B841D236D36007908ED /* LOLInfomationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B831D236D36007908ED /* LOLInfomationCell.m */; };
+		81BC6B881D2377C3007908ED /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B871D2377C3007908ED /* BaseNetManager.m */; };
+		81BC6B8B1D237A3F007908ED /* LOLListNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B8A1D237A3F007908ED /* LOLListNetManager.m */; };
+		81BC6B8E1D237AA4007908ED /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B8D1D237AA4007908ED /* BaseModel.m */; };
+		81BC6B911D237AC8007908ED /* LOLInfomationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B901D237AC8007908ED /* LOLInfomationModel.m */; };
+		81BC6B951D237C92007908ED /* LOLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B941D237C92007908ED /* LOLBaseViewModel.m */; };
+		81BC6B981D237CC7007908ED /* LOLInfomationVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B971D237CC7007908ED /* LOLInfomationVM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -295,6 +302,20 @@
 		81BC6B7B1D2366AC007908ED /* LOLMoreCon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLMoreCon.m; sourceTree = "<group>"; };
 		81BC6B7D1D236777007908ED /* LOLPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LOLPch.pch; sourceTree = "<group>"; };
 		81BC6B7E1D236A8C007908ED /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		81BC6B821D236D36007908ED /* LOLInfomationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationCell.h; sourceTree = "<group>"; };
+		81BC6B831D236D36007908ED /* LOLInfomationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationCell.m; sourceTree = "<group>"; };
+		81BC6B861D2377C3007908ED /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		81BC6B871D2377C3007908ED /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		81BC6B891D237A3F007908ED /* LOLListNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLListNetManager.h; sourceTree = "<group>"; };
+		81BC6B8A1D237A3F007908ED /* LOLListNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLListNetManager.m; sourceTree = "<group>"; };
+		81BC6B8C1D237AA4007908ED /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		81BC6B8D1D237AA4007908ED /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		81BC6B8F1D237AC8007908ED /* LOLInfomationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationModel.h; sourceTree = "<group>"; };
+		81BC6B901D237AC8007908ED /* LOLInfomationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationModel.m; sourceTree = "<group>"; };
+		81BC6B931D237C92007908ED /* LOLBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLBaseViewModel.h; sourceTree = "<group>"; };
+		81BC6B941D237C92007908ED /* LOLBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseViewModel.m; sourceTree = "<group>"; };
+		81BC6B961D237CC7007908ED /* LOLInfomationVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationVM.h; sourceTree = "<group>"; };
+		81BC6B971D237CC7007908ED /* LOLInfomationVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationVM.m; sourceTree = "<group>"; };
 		95DFA6AA299090A74C822590 /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		A9FCC77A4721B899F483940E /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AA9B9937C9C9F64D4E0D3179 /* libPods-myProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -490,6 +511,8 @@
 		81BC6B581D2363B6007908ED /* 资讯 */ = {
 			isa = PBXGroup;
 			children = (
+				81BC6B921D237BA2007908ED /* viewModel */,
+				81BC6B851D2377A1007908ED /* netManager */,
 				81BC6B601D2364BB007908ED /* model */,
 				81BC6B5F1D2364B6007908ED /* view */,
 				81BC6B5E1D2364A3007908ED /* controller */,
@@ -564,6 +587,8 @@
 		81BC6B5F1D2364B6007908ED /* view */ = {
 			isa = PBXGroup;
 			children = (
+				81BC6B821D236D36007908ED /* LOLInfomationCell.h */,
+				81BC6B831D236D36007908ED /* LOLInfomationCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -571,6 +596,10 @@
 		81BC6B601D2364BB007908ED /* model */ = {
 			isa = PBXGroup;
 			children = (
+				81BC6B8C1D237AA4007908ED /* BaseModel.h */,
+				81BC6B8D1D237AA4007908ED /* BaseModel.m */,
+				81BC6B8F1D237AC8007908ED /* LOLInfomationModel.h */,
+				81BC6B901D237AC8007908ED /* LOLInfomationModel.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -665,6 +694,28 @@
 				81BC6B7B1D2366AC007908ED /* LOLMoreCon.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		81BC6B851D2377A1007908ED /* netManager */ = {
+			isa = PBXGroup;
+			children = (
+				81BC6B861D2377C3007908ED /* BaseNetManager.h */,
+				81BC6B871D2377C3007908ED /* BaseNetManager.m */,
+				81BC6B891D237A3F007908ED /* LOLListNetManager.h */,
+				81BC6B8A1D237A3F007908ED /* LOLListNetManager.m */,
+			);
+			name = netManager;
+			sourceTree = "<group>";
+		};
+		81BC6B921D237BA2007908ED /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				81BC6B931D237C92007908ED /* LOLBaseViewModel.h */,
+				81BC6B941D237C92007908ED /* LOLBaseViewModel.m */,
+				81BC6B961D237CC7007908ED /* LOLInfomationVM.h */,
+				81BC6B971D237CC7007908ED /* LOLInfomationVM.m */,
+			);
+			name = viewModel;
 			sourceTree = "<group>";
 		};
 		8806287AB89E2FB5869CF2F6 /* Pods */ = {
@@ -934,9 +985,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8127A41C1D225B8C004FCD9E /* AppDelegate.m in Sources */,
+				81BC6B8B1D237A3F007908ED /* LOLListNetManager.m in Sources */,
+				81BC6B881D2377C3007908ED /* BaseNetManager.m in Sources */,
+				81BC6B911D237AC8007908ED /* LOLInfomationModel.m in Sources */,
+				81BC6B951D237C92007908ED /* LOLBaseViewModel.m in Sources */,
+				81BC6B8E1D237AA4007908ED /* BaseModel.m in Sources */,
+				81BC6B841D236D36007908ED /* LOLInfomationCell.m in Sources */,
 				81BC6B7C1D2366AC007908ED /* LOLMoreCon.m in Sources */,
 				8127A4191D225B8C004FCD9E /* main.m in Sources */,
 				81BC6B721D2365D3007908ED /* LOLVideoCon.m in Sources */,
+				81BC6B981D237CC7007908ED /* LOLInfomationVM.m in Sources */,
 				81BC6B631D236526007908ED /* LOLInfomationCon.m in Sources */,
 				81BC6B751D236673007908ED /* LOLHeroCon.m in Sources */,
 				81BC6B781D236698007908ED /* LOLConmunityCon.m in Sources */,
