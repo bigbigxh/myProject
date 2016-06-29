@@ -1,0 +1,8 @@
+target "myProject" do
+pod 'FMDB'
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'MJRefresh'
+end
