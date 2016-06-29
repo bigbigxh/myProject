@@ -23,3 +23,5 @@
 #import <SDWebImageManager.h>
 #import <UIImageView+WebCache.h>
 
+#import "UIColor+mycolor.h" //读取在plist文件中的rgb数值，返回颜色。用来进行模式切换
+

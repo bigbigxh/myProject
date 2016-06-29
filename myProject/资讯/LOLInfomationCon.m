@@ -79,12 +79,15 @@ static NSInteger const spaceToLast = 10;
         [cell.videoView  sd_setImageWithURL:[NSURL URLWithString:[self.viewModel picForRow:indexPath.row]]];
         cell.titleLb.text = [self.viewModel titleForRow:indexPath.row];
         cell.descLb.text = [self.viewModel descForRow:indexPath.row];
+        cell.backgroundColor = [UIColor InfoCellBackGroundColor];
         
         return cell;
     }else{
         UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:DefaultResufier];
+        cell.backgroundColor = [UIColor InfoCellBackGroundColor];
         cell.textLabel.font = [UIFont systemFontOfSize:15];
         cell.textLabel.text = [self.viewModel titleForRow:indexPath.row];
+        cell.textLabel.textColor = [UIColor InfoCellTitleColor];
         [cell.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(spaceToLeft);
             make.top.mas_equalTo(spaceToTop);
@@ -96,8 +99,7 @@ static NSInteger const spaceToLast = 10;
             make.top.mas_equalTo(cell.textLabel.mas_bottom).mas_equalTo(spaceToLast);
             make.right.mas_equalTo(spaceToRight);
         }];
-#pragma mark - 这里要对Color做分类
-        cell.detailTextLabel.textColor = [UIColor grayColor];
+        cell.detailTextLabel.textColor = [UIColor InfoCellDescColor];
         cell.detailTextLabel.numberOfLines = 0;
         
         return cell;
@@ -106,7 +108,13 @@ static NSInteger const spaceToLast = 10;
 
 kRemoveCellSeparator;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"kindModel"] isEqualToString:@"night"]) {
+//        [[NSUserDefaults standardUserDefaults] setObject:@"day" forKey:@"kindModel"];
+//    }else{
+//        [[NSUserDefaults standardUserDefaults] setObject:@"night" forKey:@"kindModel"];
+//    }
     
+    [self.tableView reloadData];
 }
 
 /*

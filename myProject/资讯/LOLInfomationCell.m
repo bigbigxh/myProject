@@ -34,8 +34,7 @@ static NSInteger const spaceToLast = 10;
         _titleLb = [[UILabel alloc]init];
         _titleLb.font = [UIFont systemFontOfSize:15];
 //        _titleLb.textAlignment = NSTextAlignmentLeft;Default is Left
-#pragma mark - 这里要对Color写分类，做模式切换
-        _titleLb.textColor = [UIColor blackColor];
+        _titleLb.textColor = [UIColor InfoCellTitleColor];
         [self.contentView addSubview:_titleLb];
         [_titleLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.videoView.mas_right).mas_equalTo(spaceToLeft);
@@ -49,8 +48,7 @@ static NSInteger const spaceToLast = 10;
         _descLb = [[UILabel alloc]init];
         _descLb.font = [UIFont systemFontOfSize:13];
 //        _descLb.textAlignment = NSTextAlignmentLeft;Default is Left
-#pragma mark - 这里要对Color写分类，做模式切换
-        _descLb.textColor = [UIColor grayColor];
+        _descLb.textColor = [UIColor InfoCellDescColor];
         [self.contentView addSubview:_descLb];
         [_descLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.videoView.mas_right).mas_equalTo(spaceToLeft);

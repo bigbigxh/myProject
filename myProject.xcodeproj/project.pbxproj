@@ -152,6 +152,10 @@
 		81BC6B911D237AC8007908ED /* LOLInfomationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B901D237AC8007908ED /* LOLInfomationModel.m */; };
 		81BC6B951D237C92007908ED /* LOLBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B941D237C92007908ED /* LOLBaseViewModel.m */; };
 		81BC6B981D237CC7007908ED /* LOLInfomationVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B971D237CC7007908ED /* LOLInfomationVM.m */; };
+		81BC6B9C1D23ABE2007908ED /* UIColor+mycolor.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6B9B1D23ABE2007908ED /* UIColor+mycolor.m */; };
+		81BC6BA01D23AC0C007908ED /* day.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BC6B9D1D23AC0C007908ED /* day.plist */; };
+		81BC6BA11D23AC0C007908ED /* night.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BC6B9E1D23AC0C007908ED /* night.plist */; };
+		81BC6BA21D23AC0C007908ED /* orange.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BC6B9F1D23AC0C007908ED /* orange.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -316,6 +320,11 @@
 		81BC6B941D237C92007908ED /* LOLBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLBaseViewModel.m; sourceTree = "<group>"; };
 		81BC6B961D237CC7007908ED /* LOLInfomationVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationVM.h; sourceTree = "<group>"; };
 		81BC6B971D237CC7007908ED /* LOLInfomationVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationVM.m; sourceTree = "<group>"; };
+		81BC6B9A1D23ABE2007908ED /* UIColor+mycolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+mycolor.h"; sourceTree = "<group>"; };
+		81BC6B9B1D23ABE2007908ED /* UIColor+mycolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+mycolor.m"; sourceTree = "<group>"; };
+		81BC6B9D1D23AC0C007908ED /* day.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = day.plist; sourceTree = "<group>"; };
+		81BC6B9E1D23AC0C007908ED /* night.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night.plist; sourceTree = "<group>"; };
+		81BC6B9F1D23AC0C007908ED /* orange.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = orange.plist; sourceTree = "<group>"; };
 		95DFA6AA299090A74C822590 /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		A9FCC77A4721B899F483940E /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AA9B9937C9C9F64D4E0D3179 /* libPods-myProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -354,6 +363,8 @@
 		8127A4161D225B8B004FCD9E /* myProject */ = {
 			isa = PBXGroup;
 			children = (
+				81BC6BA31D23AC1C007908ED /* category */,
+				81BC6B991D23ABD5007908ED /* resource */,
 				81BC6B5D1D2363E2007908ED /* configuration */,
 				81BC6B5C1D2363D3007908ED /* 更多 */,
 				81BC6B5B1D2363CE007908ED /* 社区 */,
@@ -718,6 +729,25 @@
 			name = viewModel;
 			sourceTree = "<group>";
 		};
+		81BC6B991D23ABD5007908ED /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				81BC6B9D1D23AC0C007908ED /* day.plist */,
+				81BC6B9E1D23AC0C007908ED /* night.plist */,
+				81BC6B9F1D23AC0C007908ED /* orange.plist */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		81BC6BA31D23AC1C007908ED /* category */ = {
+			isa = PBXGroup;
+			children = (
+				81BC6B9A1D23ABE2007908ED /* UIColor+mycolor.h */,
+				81BC6B9B1D23ABE2007908ED /* UIColor+mycolor.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
 		8806287AB89E2FB5869CF2F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,6 +873,7 @@
 				81BC6B3E1D236037007908ED /* 79.json in Resources */,
 				81BC6B241D236037007908ED /* 55.json in Resources */,
 				81BC6B331D236037007908ED /* 69.json in Resources */,
+				81BC6BA21D23AC0C007908ED /* orange.plist in Resources */,
 				81BC6B4B1D236037007908ED /* 90.json in Resources */,
 				81BC6AF01D236037007908ED /* 122.json in Resources */,
 				81BC6B231D236037007908ED /* 54.json in Resources */,
@@ -853,6 +884,7 @@
 				81BC6AE81D236037007908ED /* 115.json in Resources */,
 				81BC6B021D236037007908ED /* 24.json in Resources */,
 				81BC6B121D236037007908ED /* 39.json in Resources */,
+				81BC6BA01D23AC0C007908ED /* day.plist in Resources */,
 				81BC6B441D236037007908ED /* 84.json in Resources */,
 				81BC6AD71D236037007908ED /* 10.json in Resources */,
 				81BC6B411D236037007908ED /* 81.json in Resources */,
@@ -862,6 +894,7 @@
 				81BC6AFF1D236037007908ED /* 21.json in Resources */,
 				81BC6AEA1D236037007908ED /* 117.json in Resources */,
 				81BC6B361D236037007908ED /* 71.json in Resources */,
+				81BC6BA11D23AC0C007908ED /* night.plist in Resources */,
 				81BC6B511D236037007908ED /* 96.json in Resources */,
 				81BC6B281D236037007908ED /* 59.json in Resources */,
 				81BC6ADA1D236037007908ED /* 102.json in Resources */,
@@ -994,6 +1027,7 @@
 				81BC6B7C1D2366AC007908ED /* LOLMoreCon.m in Sources */,
 				8127A4191D225B8C004FCD9E /* main.m in Sources */,
 				81BC6B721D2365D3007908ED /* LOLVideoCon.m in Sources */,
+				81BC6B9C1D23ABE2007908ED /* UIColor+mycolor.m in Sources */,
 				81BC6B981D237CC7007908ED /* LOLInfomationVM.m in Sources */,
 				81BC6B631D236526007908ED /* LOLInfomationCon.m in Sources */,
 				81BC6B751D236673007908ED /* LOLHeroCon.m in Sources */,

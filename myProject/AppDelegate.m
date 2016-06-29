@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"kindModel"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"day" forKey:@"kindModel"];
+    }
+    
     return YES;
 }
 
