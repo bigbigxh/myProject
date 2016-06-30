@@ -26,6 +26,14 @@ static NSInteger const spaceToRight = -15;
 static NSInteger const spaceToTop = 15;
 static NSInteger const spaceToLast = 10;
 
+- (instancetype)init{
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+
+
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, kWindowH) style:UITableViewStylePlain];
@@ -35,12 +43,14 @@ static NSInteger const spaceToLast = 10;
         _tableView.showsVerticalScrollIndicator = NO;//隐藏滚动条
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:DefaultResufier];
         [_tableView registerClass:[LOLInfomationCell class] forCellReuseIdentifier:InfoResufier];
+        //头部刷新
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             [self.viewModel refreshDataCompleteHandle:^(NSError *error) {
                 [_tableView.mj_header endRefreshing];
                 [_tableView reloadData];
             }];
         }];
+        //加载更多
         _tableView.mj_footer = [MJRefreshBackFooter footerWithRefreshingBlock:^{
             [self.viewModel getMoreDataCompleteHandle:^(NSError *error) {
                 [self.tableView.mj_footer endRefreshing];
@@ -52,7 +62,24 @@ static NSInteger const spaceToLast = 10;
 }
 - (LOLInfomationVM *)viewModel{
     if (!_viewModel) {
-        _viewModel = [[LOLInfomationVM alloc]initWithLoLInfoListType:LoLInfoListTypeZuiXin];
+        _infoType = 0;
+        switch (self.infoType.integerValue) {
+            case 0:
+                _viewModel = [[LOLInfomationVM alloc]initWithLoLInfoListType:LoLInfoListTypeZuiXin];
+                break;
+            case 1:
+                _viewModel = [[LOLInfomationVM alloc]initWithLoLInfoListType:LoLInfoListTypeXinWen];
+                break;
+            case 2:
+                _viewModel = [[LOLInfomationVM alloc]initWithLoLInfoListType:LoLInfoListTypeSaiShi];
+                break;
+            case 3:
+                _viewModel = [[LOLInfomationVM alloc]initWithLoLInfoListType:LoLInfoListTypeYuLe];
+                break;
+                
+            default:
+                break;
+        }
     }
     return _viewModel;
 }
