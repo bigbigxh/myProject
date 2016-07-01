@@ -9,6 +9,7 @@
 #import "LOLInfomationCon.h"
 #import "LOLInfomationCell.h"
 #import "LOLInfomationVM.h"
+#import "LOLInfomationWeb.h"
 
 @interface LOLInfomationCon ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -110,6 +111,7 @@ static NSInteger const spaceToLast = 10;
         
         return cell;
     }else{
+        //采用系统的cell
         UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:DefaultResufier];
         cell.backgroundColor = [UIColor InfoCellBackGroundColor];
         cell.textLabel.font = [UIFont systemFontOfSize:15];
@@ -135,13 +137,20 @@ static NSInteger const spaceToLast = 10;
 
 kRemoveCellSeparator;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"kindModel"] isEqualToString:@"night"]) {
-//        [[NSUserDefaults standardUserDefaults] setObject:@"day" forKey:@"kindModel"];
-//    }else{
-//        [[NSUserDefaults standardUserDefaults] setObject:@"night" forKey:@"kindModel"];
-//    }
     
-    [self.tableView reloadData];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //判断如果存在图片地址，则证明这个cell是有视频的
+     if ([self.viewModel picForRow:indexPath.row].length > 4) {
+         
+        
+     }else{//否则就是单纯的webView
+         LOLInfomationWeb *webViewController = [[LOLInfomationWeb alloc]init];
+         
+         NSString *Id = [self.viewModel IdForRow:indexPath.row];
+         webViewController.Id = Id;
+         webViewController.hidesBottomBarWhenPushed = YES;
+         [self.navigationController pushViewController:webViewController animated:YES];
+     }
 }
 
 /*

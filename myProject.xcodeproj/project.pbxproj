@@ -162,6 +162,8 @@
 		81BC6BB51D23C691007908ED /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6BAE1D23C691007908ED /* WMProgressView.m */; };
 		81BC6BB61D23C691007908ED /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6BB11D23C691007908ED /* WMPageController.m */; };
 		81BC6BB91D23C798007908ED /* LOLInfomationCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BC6BB81D23C798007908ED /* LOLInfomationCollection.m */; };
+		81F328301D25F45E00D35D68 /* LOLInfomationWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F3282F1D25F45E00D35D68 /* LOLInfomationWeb.m */; };
+		81F328331D25FE9600D35D68 /* LOLInfomationVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F328321D25FE9600D35D68 /* LOLInfomationVideoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -344,6 +346,10 @@
 		81BC6BB11D23C691007908ED /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		81BC6BB71D23C798007908ED /* LOLInfomationCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationCollection.h; sourceTree = "<group>"; };
 		81BC6BB81D23C798007908ED /* LOLInfomationCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationCollection.m; sourceTree = "<group>"; };
+		81F3282E1D25F45E00D35D68 /* LOLInfomationWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationWeb.h; sourceTree = "<group>"; };
+		81F3282F1D25F45E00D35D68 /* LOLInfomationWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationWeb.m; sourceTree = "<group>"; };
+		81F328311D25FE9600D35D68 /* LOLInfomationVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOLInfomationVideoController.h; sourceTree = "<group>"; };
+		81F328321D25FE9600D35D68 /* LOLInfomationVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOLInfomationVideoController.m; sourceTree = "<group>"; };
 		95DFA6AA299090A74C822590 /* Pods-myProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.release.xcconfig"; sourceTree = "<group>"; };
 		A9FCC77A4721B899F483940E /* Pods-myProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myProject/Pods-myProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AA9B9937C9C9F64D4E0D3179 /* libPods-myProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -613,6 +619,10 @@
 				81BC6B621D236526007908ED /* LOLInfomationCon.m */,
 				81BC6BB71D23C798007908ED /* LOLInfomationCollection.h */,
 				81BC6BB81D23C798007908ED /* LOLInfomationCollection.m */,
+				81F3282E1D25F45E00D35D68 /* LOLInfomationWeb.h */,
+				81F3282F1D25F45E00D35D68 /* LOLInfomationWeb.m */,
+				81F328311D25FE9600D35D68 /* LOLInfomationVideoController.h */,
+				81F328321D25FE9600D35D68 /* LOLInfomationVideoController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1082,6 +1092,7 @@
 				81BC6BB61D23C691007908ED /* WMPageController.m in Sources */,
 				81BC6BB51D23C691007908ED /* WMProgressView.m in Sources */,
 				81BC6B951D237C92007908ED /* LOLBaseViewModel.m in Sources */,
+				81F328331D25FE9600D35D68 /* LOLInfomationVideoController.m in Sources */,
 				81BC6B8E1D237AA4007908ED /* BaseModel.m in Sources */,
 				81BC6B841D236D36007908ED /* LOLInfomationCell.m in Sources */,
 				81BC6B7C1D2366AC007908ED /* LOLMoreCon.m in Sources */,
@@ -1091,6 +1102,7 @@
 				81BC6B9C1D23ABE2007908ED /* UIColor+mycolor.m in Sources */,
 				81BC6BB21D23C691007908ED /* WMFooldView.m in Sources */,
 				81BC6B981D237CC7007908ED /* LOLInfomationVM.m in Sources */,
+				81F328301D25F45E00D35D68 /* LOLInfomationWeb.m in Sources */,
 				81BC6B631D236526007908ED /* LOLInfomationCon.m in Sources */,
 				81BC6B751D236673007908ED /* LOLHeroCon.m in Sources */,
 				81BC6B781D236698007908ED /* LOLConmunityCon.m in Sources */,
